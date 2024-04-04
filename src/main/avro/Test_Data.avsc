@@ -1,0 +1,62 @@
+{
+  "type" : "record",
+  "name" : "ExampleRecord",
+  "namespace" : "com.example",
+  "fields" : [ {
+    "name" : "page",
+    "type" : {
+      "type" : "record",
+      "name" : "page",
+      "namespace" : "page",
+      "fields" : [ {
+        "name" : "nextPage",
+        "type" : "boolean"
+      }, {
+        "name" : "lastCursor",
+        "type" : "string"
+      } ]
+    }
+  }, {
+    "name" : "data",
+    "type" : {
+      "type" : "array",
+      "items" : {
+        "type" : "record",
+        "name" : "data",
+        "namespace" : "data",
+        "fields" : [ {
+          "name" : "series",
+          "type" : "string"
+        }, {
+          "name" : "connectionStatus",
+          "type" : {
+            "type" : "record",
+            "name" : "connectionStatus",
+            "namespace" : "connectionStatus",
+            "fields" : [ {
+              "name" : "healthStatus",
+              "type" : "string"
+            }, {
+              "name" : "lastConnected",
+              "type" : "string"
+            } ]
+          }
+        }, {
+          "name" : "dataUsage",
+          "type" : {
+            "type" : "record",
+            "name" : "dataUsage",
+            "namespace" : "dataUsage",
+            "fields" : [ {
+              "name" : "usageBytes",
+              "type" : "int"
+            } ]
+          }
+        }, {
+          "name" : "model",
+          "type" : "string"
+        } ]
+      }
+    }
+  } ]
+}

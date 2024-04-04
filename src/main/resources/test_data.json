@@ -1,0 +1,18 @@
+{
+  "page": {
+    "nextPage": true,
+    "lastCursor": "c8b4drt678091b64c"
+  },
+  "data": [{
+    "series": "K9H99-0987FCM",
+    "connectionStatus": {
+      "healthStatus": "Connected",
+      "lastConnected": "2024-01-21T22:53:09.358Z"
+    },
+    "dataUsage": {
+      "usageBytes": 45682449
+    },
+    "model": "ABB"
+  }
+  ]
+}
